@@ -1,0 +1,87 @@
+/*
+* =====================================
+    KOMINIKE - v1.0.0
+* =====================================
+* 
+* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
+* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
+*          - Dilshan Ramesh (https://github.com/Dilshan97)
+*
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+.nova-label {
+	font-size: var(--txt-base);
+	line-height: var(--line-height-txt-base);
+	font-weight: 500;
+	padding: 0px 8px;
+	border-radius: 8px;
+	text-transform: capitalize;
+
+	// &.large {
+	// 	font-size: var(--txt-base);
+	// 	padding: 2px 8px;
+	// }
+
+	// &.medium {
+	// 	font-size: var(--txt-s);
+	// 	padding: 0 8px;
+	// }
+
+	//! sizes
+	&.small {
+		font-size: var(--txt-s);
+		line-height: var(--line-height-txt-s);
+	}
+
+	//! colors
+	&.initial {
+		background: var(--color-primary-50);
+		color: var(--color-primary-900);
+	}
+
+	&.high {
+		background: var(--color-red-50);
+		color: var(--color-red-600);
+
+		img {
+			filter: invert(19%) sepia(95%) saturate(6834%) hue-rotate(333deg)
+				brightness(77%) contrast(106%);
+		}
+	}
+
+	&.medium {
+		background: var(--color-green-50);
+		color: var(--color-green-600);
+
+		img {
+			filter: invert(37%) sepia(91%) saturate(1020%) hue-rotate(111deg)
+				brightness(96%) contrast(101%);
+		}
+	}
+
+	&.low {
+		background: var(--color-primary-50);
+		color: var(--color-primary-600);
+
+		img {
+			filter: invert(50%) sepia(32%) saturate(3339%) hue-rotate(158deg)
+				brightness(88%) contrast(103%);
+		}
+	}
+
+	&.input-type {
+		padding: 8px 8px;
+		min-width: max-content;
+	}
+
+	i {
+		// display: inline-flex;
+		// max-width: 16px !important;
+		// height: 16px !important;
+		font-size: 18px;
+
+		// filter: invert(26%) sepia(81%) saturate(474%) hue-rotate(145deg)
+		// 	brightness(94%) contrast(97%);
+	}
+}

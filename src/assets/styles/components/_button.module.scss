@@ -1,0 +1,129 @@
+/*
+* =====================================
+    KOMINIKE - v1.0.0
+* =====================================
+* 
+* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
+* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
+*          - Dilshan Ramesh (https://github.com/Dilshan97)
+*
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+button {
+	&.btn {
+		width: 100%;
+		height: unset !important;
+		border-radius: 8px !important;
+		padding: 8px 20px;
+		font-size: var(--button-primary-text-size) !important;
+		line-height: var(--button-primary-line-height) !important;
+		font-weight: var(--button-primary-text-weight) !important;
+		transition: 0.3s;
+		cursor: pointer;
+
+		&-primary {
+			background: var(--button-primary-background) !important;
+			border: solid 1px var(--button-primary-border) !important;
+
+			&,
+			* {
+				color: var(--button-primary-text-color);
+			}
+
+			&:hover,
+			&:active,
+			&.loading {
+				background: var(--button-primary-hover-background) !important;
+				border-color: var(--button-primary-hover-border) !important;
+			}
+
+			&:disabled,
+			&.disabled {
+				background: var(--button-primary-disabled-background) !important;
+				border-color: var(--button-primary-disabled-border) !important;
+				color: var(--button-primary-disabled-text-color);
+			}
+
+			&.danger {
+				background: var(--color-error-500) !important;
+				border: solid 1px var(--color-error-500) !important;
+				color: var(--button-primary-text-color);
+			}
+		}
+
+		&-secondary {
+			background: var(--button-secondary-background) !important;
+			border: solid 1px var(--button-secondary-border) !important;
+
+			&,
+			* {
+				color: var(--button-secondary-text-color) !important;
+			}
+
+			&:hover,
+			&:active,
+			&.loading {
+				background: var(--button-secondary-hover-background) !important;
+				border-color: var(--button-secondary-hover-border) !important;
+				color: var(--button-secondary-hover-text-color) !important;
+			}
+
+			&:disabled,
+			&.disabled {
+				background: var(--button-secondary-disabled-background) !important;
+				border-color: var(--button-secondary-disabled-border) !important;
+				color: var(--button-secondary-disabled-text-color) !important;
+			}
+
+			&.danger {
+				// background: var(--color-error-500) !important;
+				border: solid 1px var(--color-error-500) !important;
+
+				color: var(--color-error-500) !important;
+			}
+		}
+
+		&.btn-small {
+			padding: 4px 20px;
+			font-size: var(--button-small-text-size) !important;
+			line-height: var(--button-small-line-height) !important;
+		}
+
+		&.btn-icon {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: center;
+
+			i {
+				font-size: 1.2rem;
+			}
+
+			span {
+				max-width: 16px;
+				height: 16px;
+				line-height: 14px;
+
+				// img {
+				// 	width: 100%;
+				// 	height: 100%;
+				// 	filter: invert(32%) sepia(35%) saturate(875%) hue-rotate(146deg)
+				// 		brightness(89%) contrast(106%);
+				// }
+			}
+
+			&.btn-small {
+			}
+		}
+	}
+
+	&.width-max-content {
+		width: max-content !important;
+	}
+
+	&.w-fit-content {
+		width: -moz-fit-content !important;
+		width: fit-content !important;
+	}
+}

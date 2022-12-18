@@ -1,0 +1,174 @@
+/*
+* =====================================
+    KOMINIKE - v1.0.0
+* =====================================
+* 
+* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
+* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
+*          - Dilshan Ramesh (https://github.com/Dilshan97)
+*
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+// @import "../vendors/font-MonumentExtended.module";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+	--txt-h1: #{$txt-h1};
+	--txt-h2: #{$txt-h2};
+	--txt-h3: #{$txt-h3};
+
+	--txt-lg: #{$txt-lg};
+	--txt-base: #{$txt-base};
+	--txt-s: #{$txt-s};
+	--txt-xs: #{$txt-xs};
+	--txt-xxs: #{$txt-xxs};
+
+	--line-height-txt-h1: #{$line-height-h1};
+	--line-height-txt-h2: #{$line-height-h2};
+	--line-height-txt-h3: #{$line-height-h3};
+
+	--line-height-txt-lg: #{$line-height-txt-lg};
+	--line-height-txt-base: #{$line-height-txt-base};
+	--line-height-txt-s: #{$line-height-txt-s};
+	--line-height-txt-xs: #{$line-height-txt-xs};
+	--line-height-txt-xss: #{$line-height-txt-xxs};
+}
+
+html {
+	font-size: 16px;
+	// line-height: 1.25;
+	body {
+		font-family: "Lato", "Poppins", -apple-system, BlinkMacSystemFont,
+			"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+			"Helvetica Neue", sans-serif;
+		line-height: var(--line-heigt);
+	}
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+	color: var(--text-color-neutral) !important;
+	font-weight: 500;
+}
+
+a {
+	color: var(--text-color-neutral);
+
+	&.link {
+		display: inline-flex;
+		align-items: center;
+		font-size: var(--link-primary-size) !important;
+		font-weight: var(--link-primary-weight) !important;
+		line-height: var(--link-primary-line-hight) !important;
+		transition: 0.3s;
+
+		&-primary {
+			color: var(--link-primary-color);
+
+			&:hover,
+			&:active {
+				color: var(--link-primary-hover-color) !important;
+			}
+		}
+
+		&-danger {
+			color: var(--link-danger-color);
+
+			&:hover,
+			&:active {
+				color: var(--link-danger-hover-color) !important;
+			}
+		}
+
+		&:disabled,
+		&.disabled {
+			color: var(--link-primary-disabled-color) !important;
+		}
+
+		&.link-small {
+			font-size: var(--link-small-size) !important;
+			line-height: var(--link-small-line-hight) !important;
+		}
+	}
+
+	&.has-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		span.icon-wrapper {
+			width: 1rem;
+			max-height: 1rem;
+			line-height: 0.9rem;
+		}
+
+		&.icon-bold {
+			i {
+				font-weight: 600 !important;
+			}
+		}
+	}
+}
+
+p {
+	&.p-medium {
+		font-size: var(--txt-base);
+		font-weight: 400;
+	}
+}
+
+.txt {
+	&-h1 {
+		font-size: var(--heading-h1-size);
+		font-weight: var(--heading-h1-weight);
+		line-height: var(--heading-h1-line-hight);
+		letter-spacing: -1px;
+	}
+
+	&-h2 {
+		font-size: var(--heading-h2-size);
+		font-weight: var(--heading-h2-weight);
+		line-height: var(--heading-h2-line-hight);
+		letter-spacing: -1px;
+	}
+
+	&-lg {
+		font-size: var(--txt-lg);
+		line-height: var(--line-height-txt-lg);
+	}
+
+	&-base {
+		font-size: var(--txt-base);
+	}
+	&-s {
+		font-size: var(--txt-s);
+	}
+	&-xs {
+		font-size: var(--txt-xs);
+	}
+	&-xxs {
+		font-size: var(--txt-xxs);
+	}
+}
+
+.h {
+	&1 {
+		color: var(--heading-h-color) !important;
+		font-size: var(--heading-h1-size) !important;
+		font-weight: var(--heading-h1-weight) !important;
+		line-height: var(--heading-h1-line-hight) !important;
+	}
+
+	// &3 {
+	// 	font-weight: var(--heading-h2-weight) !important;
+	// 	line-height: var(--heading-h2-line-hight) !important;
+	// }
+}

@@ -1,0 +1,55 @@
+/*
+* =====================================
+    KOMINIKE - v1.0.0
+* =====================================
+* 
+* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
+* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
+*          - Dilshan Ramesh (https://github.com/Dilshan97)
+*
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+.avatar-group {
+	// width: 50px;
+	display: inline-flex;
+	border: 2px solid var(--color-neutral-200);
+	border-radius: 8px;
+	height: 46px;
+
+	&.small {
+		height: 31px;
+
+		.avatar-group-wrapper {
+			& > *:not(:last-child) {
+				margin-left: -3px;
+			}
+		}
+
+		.extened-amount {
+			font-weight: 400;
+			line-height: var(--line-height-txt-xss);
+			font-size: var(--txt-xxs);
+		}
+	}
+
+	.avatar-group-wrapper {
+		position: relative;
+
+		& > *:not(:last-child) {
+			margin-left: -4px;
+		}
+		// & > * {
+		// 	outline: 3px solid red;
+		// 	border-radius: 6px;
+		// 	background: green;
+		// }
+	}
+
+	.extened-amount {
+		font-weight: 500;
+		line-height: var(--line-height-txt-s);
+		font-size: var(--txt-s);
+		color: var(--color-neutral-600);
+	}
+}
