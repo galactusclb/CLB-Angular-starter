@@ -1,15 +1,3 @@
-/*
-* =====================================
-    KOMINIKE - v1.0.0
-* =====================================
-* 
-* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
-* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
-*          - Dilshan Ramesh (https://github.com/Dilshan97)
-*
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 @import "antd/dist/antd.min.css";
 
 // Configuration
@@ -36,18 +24,8 @@
 @import "components/text.module";
 @import "components/tags.module";
 @import "components/label.module";
-@import "components/seachbar.module";
 @import "components/otp-input.module";
 @import "components/language-selector.module";
 @import "components/custome-label.module";
 @import "components/ui/index.module.scss";
-@import "components/empty-state.module";
-@import "components/nova-antd-datepicker.module";
-@import "components/nova-antd-select.module";
-@import "components/nova-antd-modal-form";
-@import "components/nova-texteditor.module";
-@import "components/nova-emoji-popover.module";
-@import "components/nova-big-calendar.module";
-@import "components/empty-state.module";
 @import "components/spinners/index.module";
-@import "components/nova-loader.module";

@@ -1,47 +1,42 @@
 /*
 * =====================================
-    KOMINIKE - v1.0.0
+    CLB angular template - v1.0.0
 * =====================================
 * 
-* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
-* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
-*          - Dilshan Ramesh (https://github.com/Dilshan97)
-*
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 $themes: (
-	light: (
-		colorHeaderFooter: #fff,
-		colorText: #000,
-		colorBackground: #f8f8fa,
-	),
-	dark: (
-		colorHeaderFooter: #36394c,
-		colorText: #eff2f7,
-		colorBackground: #222736,
-	),
+  light: (
+    colorHeaderFooter: #fff,
+    colorText: #000,
+    colorBackground: #f8f8fa,
+  ),
+  dark: (
+    colorHeaderFooter: #36394c,
+    colorText: #eff2f7,
+    colorBackground: #222736,
+  ),
 );
 
 @mixin themify($themes) {
-	@each $theme, $map in $themes {
-		.theme-#{$theme} & {
-			$theme-map: () !global;
-			@each $key, $submap in $map {
-				$value: map-get(map-get($themes, $theme), "#{$key}");
-				$theme-map: map-merge(
-					$theme-map,
-					(
-						$key: $value,
-					)
-				) !global;
-			}
-			@content;
-			$theme-map: null !global;
-		}
-	}
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
 }
 
 @function themed($key) {
-	@return map-get($theme-map, $key);
+  @return map-get($theme-map, $key);
 }

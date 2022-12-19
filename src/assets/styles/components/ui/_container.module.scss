@@ -1,21 +1,16 @@
 /*
 * =====================================
-    KOMINIKE - v1.0.0
+    CLB angular template - v1.0.0
 * =====================================
 * 
-* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
-* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
-*          - Dilshan Ramesh (https://github.com/Dilshan97)
-*
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 .nova-container {
-	&-fluid {
-		margin-left: auto;
-		margin-right: auto;
-		// padding-left: .75rem;
-		// padding-right: var(--bs-gutter-x,.75rem);
-		width: 100%;
-	}
+  &-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: .75rem;
+    // padding-right: var(--bs-gutter-x,.75rem);
+    width: 100%;
+  }
 }

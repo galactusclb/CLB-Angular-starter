@@ -1,36 +1,31 @@
 /*
 * =====================================
-    KOMINIKE - v1.0.0
+    CLB angular template - v1.0.0
 * =====================================
 * 
-* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
-* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
-*          - Dilshan Ramesh (https://github.com/Dilshan97)
-*
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 $variable-prefix: nova- !default;
 
 // Breakpoints
 $grid-breakpoints: (
-	xs: 0,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
-	xxl: 1400px,
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
 ) !default;
 
 $spacing-amounts: (
-	0: 0,
-	1: 0.25rem,
-	2: 0.5rem,
-	3: 1rem,
-	4: 1.5rem,
-	5: 3rem,
-	6: 4rem,
-	7: 5rem,
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem,
+  6: 4rem,
+  7: 5rem,
 ) !default;
 
 // $layout-breakpoint-large: 1920px;
@@ -40,12 +35,12 @@ $spacing-amounts: (
 
 $spacer: 1rem !default;
 $spacers: (
-	0: 0,
-	1: $spacer * 0.25,
-	2: $spacer * 0.5,
-	3: $spacer,
-	4: $spacer * 1.5,
-	5: $spacer * 3,
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
 ) !default;
 
 $gutters: $spacers !default;

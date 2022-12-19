@@ -1,13 +1,8 @@
 /*
 * =====================================
-    KOMINIKE - v1.0.0
+    CLB angular template - v1.0.0
 * =====================================
 * 
-* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
-* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
-*          - Dilshan Ramesh (https://github.com/Dilshan97)
-*
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 $breakpoints: $grid-breakpoints !default;
@@ -16,35 +11,35 @@ $breakpoints: $grid-breakpoints !default;
 //
 // Make use of `.g-*`, `.gx-*` or `.gy-*` utilities to change spacing between the columns.
 .mx-auto {
-	margin-inline: auto;
+  margin-inline: auto;
 }
 
 .ms-auto {
-	margin-left: auto;
+  margin-left: auto;
 }
 .me-auto {
-	margin-left: auto;
+  margin-left: auto;
 }
 
 @each $breakpoint in map-keys($breakpoints) {
-	$infix: breakpoint-infix($breakpoint, $breakpoints);
+  $infix: breakpoint-infix($breakpoint, $breakpoints);
 
-	@each $key, $value in $gutters {
-		.g#{$infix}-#{$key} {
-			gap: #{$value};
-		}
+  @each $key, $value in $gutters {
+    .g#{$infix}-#{$key} {
+      gap: #{$value};
+    }
 
-		.gx#{$infix}-#{$key} {
-			// --#{$variable-prefix}gutter-x: #{$value};
-			column-gap: #{$value};
-		}
+    .gx#{$infix}-#{$key} {
+      // --#{$variable-prefix}gutter-x: #{$value};
+      column-gap: #{$value};
+    }
 
-		// .g#{$infix}-#{$key},
-		.gy#{$infix}-#{$key} {
-			// --#{$variable-prefix}gutter-y: #{$value};
-			row-gap: #{$value};
-		}
-	}
+    // .g#{$infix}-#{$key},
+    .gy#{$infix}-#{$key} {
+      // --#{$variable-prefix}gutter-y: #{$value};
+      row-gap: #{$value};
+    }
+  }
 }
 
 // Margins
@@ -52,35 +47,35 @@ $breakpoints: $grid-breakpoints !default;
 // Make use of `.m-*`, `.mx-*`,`.my-*`,`.ms-*`,`.me-*`,`.mt-*` or ,`.mb-*`  utilities to change spacing between the items.
 // $margins: $margins !default;
 @each $name, $margin in $spacing-amounts {
-	.m-#{$name} {
-		margin: $margin !important;
-	}
+  .m-#{$name} {
+    margin: $margin !important;
+  }
 
-	.mx-#{$name} {
-		margin-left: $margin !important;
-		margin-right: $margin !important;
-	}
+  .mx-#{$name} {
+    margin-left: $margin !important;
+    margin-right: $margin !important;
+  }
 
-	.my-#{$name} {
-		margin-top: $margin !important;
-		margin-bottom: $margin !important;
-	}
+  .my-#{$name} {
+    margin-top: $margin !important;
+    margin-bottom: $margin !important;
+  }
 
-	.mt-#{$name} {
-		margin-top: $margin !important;
-	}
+  .mt-#{$name} {
+    margin-top: $margin !important;
+  }
 
-	.mb-#{$name} {
-		margin-bottom: $margin !important;
-	}
+  .mb-#{$name} {
+    margin-bottom: $margin !important;
+  }
 
-	.ms-#{$name} {
-		margin-left: $margin !important;
-	}
+  .ms-#{$name} {
+    margin-left: $margin !important;
+  }
 
-	.me-#{$name} {
-		margin-right: $margin !important;
-	}
+  .me-#{$name} {
+    margin-right: $margin !important;
+  }
 }
 
 // @for $i from 0 through length($margins) {
@@ -125,33 +120,33 @@ $breakpoints: $grid-breakpoints !default;
 //
 // Make use of `.p-*`, `.px-*`,`.py-*`,`.ps-*`,`.pe-*`,`.pt-*` or ,`.pb-*`  utilities to change spacing inside the iteps.
 @each $name, $padding in $spacing-amounts {
-	.p-#{$name} {
-		padding: $padding !important;
-	}
+  .p-#{$name} {
+    padding: $padding !important;
+  }
 
-	.px-#{$name} {
-		padding-left: $padding !important;
-		padding-right: $padding !important;
-	}
+  .px-#{$name} {
+    padding-left: $padding !important;
+    padding-right: $padding !important;
+  }
 
-	.py-#{$name} {
-		padding-top: $padding !important;
-		padding-bottom: $padding !important;
-	}
+  .py-#{$name} {
+    padding-top: $padding !important;
+    padding-bottom: $padding !important;
+  }
 
-	.pt-#{$name} {
-		padding-top: $padding !important;
-	}
+  .pt-#{$name} {
+    padding-top: $padding !important;
+  }
 
-	.pb-#{$name} {
-		padding-bottom: $padding !important;
-	}
+  .pb-#{$name} {
+    padding-bottom: $padding !important;
+  }
 
-	.ps-#{$name} {
-		padding-left: $padding !important;
-	}
+  .ps-#{$name} {
+    padding-left: $padding !important;
+  }
 
-	.pe-#{$name} {
-		padding-right: $padding !important;
-	}
+  .pe-#{$name} {
+    padding-right: $padding !important;
+  }
 }

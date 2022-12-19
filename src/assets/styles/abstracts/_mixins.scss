@@ -1,31 +1,26 @@
 /*
 * =====================================
-    KOMINIKE - v1.0.0
+    CLB angular template - v1.0.0
 * =====================================
 * 
-* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
-* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
-*          - Dilshan Ramesh (https://github.com/Dilshan97)
-*
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 @mixin hexToFil($color: #000, $opacity: 1) {
-	$r: red($color) / 255;
-	$g: green($color) / 255;
-	$b: blue($color) / 255;
-	$a: $opacity;
+  $r: red($color) / 255;
+  $g: green($color) / 255;
+  $b: blue($color) / 255;
+  $a: $opacity;
 
-	$lightness: lightness($color);
-	filter: invert($lightness) saturate(0%) brightness(0%) opacity($opacity);
+  $lightness: lightness($color);
+  filter: invert($lightness) saturate(0%) brightness(0%) opacity($opacity);
 }
 
 @keyframes pulse {
-	from {
-		background-color: #dddddd;
-	}
+  from {
+    background-color: #dddddd;
+  }
 
-	to {
-		background-color: #eeeeee;
-	}
+  to {
+    background-color: #eeeeee;
+  }
 }

@@ -1,13 +1,8 @@
 /*
 * =====================================
-    KOMINIKE - v1.0.0
+    CLB angular template - v1.0.0
 * =====================================
 * 
-* Copyright 2022 Nova Solutions (Pvt) Ltd. (https://novasolutionsteam.com.au)
-* Coded by - Chanaka Lakshan Balasuriya (https://github.com/galactusclb)
-*          - Dilshan Ramesh (https://github.com/Dilshan97)
-*
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
 input[type="text"],
@@ -15,166 +10,166 @@ input[type="number"],
 input[type="email"],
 input[type="password"],
 textarea {
-	border-radius: 8px;
-	padding: 8px 16px 8px 16px;
-	border: 1px solid var(--input-border-color) !important;
-	background-color: var(--input-background-color) !important;
-	color: var(--input-text-color) !important;
-	font-size: var(--input-text-size) !important;
-	font-weight: 400;
-	width: 100%;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-	outline: none !important;
-	transition: 0.3s;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid var(--input-border-color) !important;
+  background-color: var(--input-background-color) !important;
+  color: var(--input-text-color) !important;
+  font-size: var(--input-text-size) !important;
+  font-weight: 400;
+  width: 100%;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: 0.3s;
 
-	&::placeholder {
-		color: var(--input-text-placeholder-color) !important;
-	}
+  &::placeholder {
+    color: var(--input-text-placeholder-color) !important;
+  }
 
-	&:hover {
-		border: 1px solid var(--input-hover-border-color) !important;
-	}
+  &:hover {
+    border: 1px solid var(--input-hover-border-color) !important;
+  }
 
-	&:active,
-	&:focus-visible {
-		border: 1px solid var(--input-active-border-color) !important;
-	}
+  &:active,
+  &:focus-visible {
+    border: 1px solid var(--input-active-border-color) !important;
+  }
 
-	&:disabled,
-	&.disabled {
-		color: var(--input-disabled-text-color) !important;
-		border: 1px solid var(--input-disabled-border-color) !important;
+  &:disabled,
+  &.disabled {
+    color: var(--input-disabled-text-color) !important;
+    border: 1px solid var(--input-disabled-border-color) !important;
 
-		&::placeholder {
-			color: var(--input-disabled-text-color) !important;
-		}
-	}
+    &::placeholder {
+      color: var(--input-disabled-text-color) !important;
+    }
+  }
 
-	&.error {
-		border: 1px solid var(--input-error-border-color) !important;
-	}
+  &.error {
+    border: 1px solid var(--input-error-border-color) !important;
+  }
 
-	// padding-top: 13px !important;
-	// padding-bottom: 13px !important;
-	// border-color: transparent;
-	// background: transparent;
-	// box-shadow: none;
-	// -webkit-box-shadow: none;
+  // padding-top: 13px !important;
+  // padding-bottom: 13px !important;
+  // border-color: transparent;
+  // background: transparent;
+  // box-shadow: none;
+  // -webkit-box-shadow: none;
 
-	// &:focus,&.form-control:focus{
-	//     box-shadow : none
-	// }
+  // &:focus,&.form-control:focus{
+  //     box-shadow : none
+  // }
 
-	// &:disabled, &[readonly] {
-	// 	background-color: #e9ecef !important;
-	// 	opacity: 1;
-	// }
+  // &:disabled, &[readonly] {
+  // 	background-color: #e9ecef !important;
+  // 	opacity: 1;
+  // }
 }
 
 .input-tags {
-	min-height: 120px;
+  min-height: 120px;
 
-	padding: 8px 16px 8px 16px;
-	border-radius: 8px;
-	border: 1px solid var(--input-border-color) !important;
-	background-color: var(--input-background-color) !important;
-	width: 100%;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-	outline: none !important;
-	transition: 0.3s;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border-color) !important;
+  background-color: var(--input-background-color) !important;
+  width: 100%;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: 0.3s;
 
-	&-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 
-		.inline-tag {
-			background: var(--tags-background-color);
-			padding: 4px 12px;
-			border-radius: 8px;
+    .inline-tag {
+      background: var(--tags-background-color);
+      padding: 4px 12px;
+      border-radius: 8px;
 
-			color: var(--tags-text-color);
-			font-weight: 500;
-			line-height: var(--tags-line-hight);
-			cursor: pointer;
+      color: var(--tags-text-color);
+      font-weight: 500;
+      line-height: var(--tags-line-hight);
+      cursor: pointer;
 
-			input {
-				background: none !important;
-				border: none !important;
-				display: inline-block;
-				padding: 0 !important;
-				min-width: calc(100% - 25px);
-				width: min-content !important;
+      input {
+        background: none !important;
+        border: none !important;
+        display: inline-block;
+        padding: 0 !important;
+        min-width: calc(100% - 25px);
+        width: min-content !important;
 
-				&:hover,
-				&:active,
-				&:focus-visible {
-					border: none !important;
-				}
-			}
-		}
+        &:hover,
+        &:active,
+        &:focus-visible {
+          border: none !important;
+        }
+      }
+    }
 
-		input.main-input {
-			// display: none;
-			width: 180px;
-			background-color: var(--input-background-color) !important;
-			padding: 4px 12px !important;
-			border-radius: 8px;
-			border: none !important;
+    input.main-input {
+      // display: none;
+      width: 180px;
+      background-color: var(--input-background-color) !important;
+      padding: 4px 12px !important;
+      border-radius: 8px;
+      border: none !important;
 
-			&:hover,
-			&:active,
-			&:focus-visible {
-				border: none !important;
-			}
+      &:hover,
+      &:active,
+      &:focus-visible {
+        border: none !important;
+      }
 
-			// &[value=""]:placeholder-shown {
-			// 	width: min-content !important;
-			// 	background: green !important;
-			// }
+      // &[value=""]:placeholder-shown {
+      // 	width: min-content !important;
+      // 	background: green !important;
+      // }
 
-			&:active,
-			&:focus {
-				width: min-content;
-				// background: var(--tags-background-color) !important;
-				background: red !important;
-			}
+      &:active,
+      &:focus {
+        width: min-content;
+        // background: var(--tags-background-color) !important;
+        background: red !important;
+      }
 
-			&:not([value=""]):not(:focus) {
-				width: min-content;
-				background: var(--input-background-color) !important;
-				// background: rgb(190, 199, 7) !important;
-			}
+      &:not([value=""]):not(:focus) {
+        width: min-content;
+        background: var(--input-background-color) !important;
+        // background: rgb(190, 199, 7) !important;
+      }
 
-			&:focus:not([value=""]) {
-				background: var(--tags-background-color) !important;
-			}
+      &:focus:not([value=""]) {
+        background: var(--tags-background-color) !important;
+      }
 
-			&.empty-list-placeholder {
-				width: 50ch !important;
-			}
-		}
-	}
+      &.empty-list-placeholder {
+        width: 50ch !important;
+      }
+    }
+  }
 
-	&:hover {
-		border: 1px solid var(--input-hover-border-color) !important;
-	}
+  &:hover {
+    border: 1px solid var(--input-hover-border-color) !important;
+  }
 
-	&:focus-within {
-		border: 1px solid var(--input-active-border-color) !important;
-		cursor: text;
-	}
+  &:focus-within {
+    border: 1px solid var(--input-active-border-color) !important;
+    cursor: text;
+  }
 
-	&.error {
-		border: 1px solid var(--input-error-border-color) !important;
-	}
+  &.error {
+    border: 1px solid var(--input-error-border-color) !important;
+  }
 }
 
 p.error-message {
-	color: var(--input-error-border-color) !important;
-	font-size: var(--txt-xs) !important;
-	padding-top: 4px;
-	padding-inline: 16px;
+  color: var(--input-error-border-color) !important;
+  font-size: var(--txt-xs) !important;
+  padding-top: 4px;
+  padding-inline: 16px;
 }
